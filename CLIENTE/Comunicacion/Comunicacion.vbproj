@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{88F7268F-1D5A-41AC-87C4-69E6E4D4785B}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Comunicacion</RootNamespace>
+    <AssemblyName>Comunicacion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Comunicacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Comunicacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comunicacion\RespuestaHTTP.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccioneDevoluciones.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesArticulos.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesBancos.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesCaja.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesChequera.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesClientes.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesComprobantes.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesCtaCteCompra.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesCtaCteVenta.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesDatosSistema.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesDepositos.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesDetalleCheques.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesDetalleFacturaVenta.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesDetalleRemitoCompra.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesDetalleRemitoVenta.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesEmpresa.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesFacturaComMonedas.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesFacturaCompra.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesFacturaCompraDetalle.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesFacturaCompraMovimientos.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesFacturaVenta.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesFacturaVentaMoneda.vb" />
+    <Compile Include="Interfaces de Transaccion\ITransaccionesGenericas.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesMonedas.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesMovimientos_RemitoCompra_FacturaCompra.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesMovimientos_Remito_Factura.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesMovimientos_Reserva_Remito.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesMovimientoValores.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesNumeracion.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesOrdenDePago.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesOrdenDePagoDetalle.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesOrdenDePagoMonedas.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesParidadCambiaria.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesPedidoDetalle.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesPedidoMovimientos.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesPedidos.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesPerfilUsuario.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesProveedores.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRecibosVenta.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRegistroOperaciones.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRemitoComMonedas.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRemitoCompraMovimientos.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRemitosCompra.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRemitosVentaMonedas.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRemitosVentaMovimientos.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRemtiosVenta.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesRubro.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesStock.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesSubRubro.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesUsuarios.vb" />
+    <Compile Include="Interfaces de Transaccion\Modelos\ITransaccionesValoresEnCartera.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\FEResultCAE.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloDetalleDevoluciones.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloDevoluciones.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloDevolucionesMonedas.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloNumeracion.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloOrdenDePagoDetalle.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloBancos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloCaja.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloChequera.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloComprobantes.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloCuentaCorrienteCompra.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloCuentaCorrienteVenta.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloDetalleCheque.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloDetalleRemitoCompra.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloEmpresa.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloFacturaComMonedas.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloFacturaCompra.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloFacturaCompraDetalle.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloFacturaCompraMovimientos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloFacturaVenta.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloFacturaVentaDetalle.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloFacturaVentaMonedas.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloFacturaVentaMovimientos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloMonedas.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloMovimientos_Factura_Reserva.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloMovimientos_RemitoCompra_FacturaCompra.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloMovimientos_Remito_Factura.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloMovimientos_Reserva_Remito.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloMovimientoValores.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloOrdenDePago.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloOrdenDePagoMonedas.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloParidadCambiaria.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloProveedores.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRecibosVenta.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRecibosVentaDetalle.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRecibosVentaMonedas.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRegistroOperaciones.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRemitoComMonedas.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRemitosCompra.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRemitosCompraMovimientos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRemitosVentaMovimientos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRubro.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloSubRubro.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloValoresEnCartera.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Servicios\ServicioDevoluciones.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Servicios\ServicioFacturaCompra.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Servicios\ServicioFacturaVenta.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Servicios\ServicioOrdenDePago.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Servicios\ServicioPedidos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Servicios\ServicioRecibosVenta.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Servicios\ServicioRemitoCompra.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Servicios\ServicioRemitoVenta.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesCaja.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesDevoluciones.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesFacturaCompraMovimientos.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesMovimientos_RemitoCompra_FacturaCompra.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesMovimientos_Remito_Factura.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesMovimientos_Reserva_Remito.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesNumeracion.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesOrdenDePago.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesOrdenDePagoDetalle.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesOrdenDePagoMonedas.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRecibosVenta.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRemitoCompraMovimientos.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRemitosVentaMovimientos.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesSubRubro.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesFacturaComMonedas.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesArticulos.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesBancos.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesChequera.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesComprobantes.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesCtaCteCompra.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesCtaCteVenta.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesDeposito.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesDetalleCheques.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesDetalleRemitoCompra.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesDetalleRemitoVenta.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesEmpresa.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesFacturaCompra.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesFacturaCompraDetalle.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesFacturaVenta.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesFacturaVentaMonedas.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesMonedas.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesParidadCambiaria.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesPedidos.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesPedidosMovimientos.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesPerfilUsuario.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesProveedores.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRegistroOperaciones.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRemitoComMonedas.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRemitoCompra.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRemitosVenta.vb" />
+    <Compile Include="Comunicacion\Peticiones.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloArticulos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloDatosSistema.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloDepositos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloDetalleRemitoVenta.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloPedidoDetalle.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloPedidoMovimientos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloPedidos.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloPerfilUsuario.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRemitosVenta.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloRemitosVentaMonedas.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloStock.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloUsuario.vb" />
+    <Compile Include="Mapeo Modelos y Servicios\Modelos\ModeloCliente.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Comunicacion\Conexion.vb" />
+    <Compile Include="Comunicacion\Transacciones.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRemitoVentaMonedas.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesRubro.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesStock.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesUsuarios.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesClientes.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesDatosSistema.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesDetalleFacturaVenta.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesPedidosDetalle.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesValoresEnCartera.vb" />
+    <Compile Include="Transacciones\Modelos\TransaccionesMovimientoValores.vb" />
+    <Compile Include="Utilidades\Encrypter.vb" />
+    <Compile Include="Utilidades\Errores.vb" />
+    <Compile Include="Utilidades\ExcepcionError.vb" />
+    <Compile Include="Utilidades\Validaciones.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

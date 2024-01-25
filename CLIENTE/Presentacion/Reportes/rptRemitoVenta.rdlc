@@ -1,0 +1,1012 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2008/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <Body>
+    <ReportItems>
+      <Textbox Name="Textbox25">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value />
+                <Style />
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox25</rd:DefaultName>
+        <Top>5.5cm</Top>
+        <Left>1.28282cm</Left>
+        <Height>6.45992cm</Height>
+        <Width>18.60162cm</Width>
+        <Visibility>
+          <Hidden>true</Hidden>
+        </Visibility>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Tablix Name="Tablix1">
+        <TablixBody>
+          <TablixColumns>
+            <TablixColumn>
+              <Width>2cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>1.5cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>7.7cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.6cm</Width>
+            </TablixColumn>
+            <TablixColumn>
+              <Width>3.5cm</Width>
+            </TablixColumn>
+          </TablixColumns>
+          <TablixRows>
+            <TablixRow>
+              <Height>0.5cm</Height>
+              <TablixCells>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Cantidad">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Cantidad.Value</Value>
+                              <Style>
+                                <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Cantidad</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Unidad">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Unidad.Value</Value>
+                              <Style>
+                                <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Center</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Unidad</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Descripcion">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Descripcion.Value</Value>
+                              <Style>
+                                <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style />
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Descripcion</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Precio">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Precio.Value</Value>
+                              <Style>
+                                <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
+                                <Format>'USD' #,0.00;('USD' #,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Precio</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+                <TablixCell>
+                  <CellContents>
+                    <Textbox Name="Importe">
+                      <CanGrow>true</CanGrow>
+                      <KeepTogether>true</KeepTogether>
+                      <Paragraphs>
+                        <Paragraph>
+                          <TextRuns>
+                            <TextRun>
+                              <Value>=Fields!Importe.Value</Value>
+                              <Style>
+                                <FontFamily>Arial Narrow</FontFamily>
+                                <FontSize>8pt</FontSize>
+                                <Format>'USD' #,0.00;('USD' #,0.00)</Format>
+                              </Style>
+                            </TextRun>
+                          </TextRuns>
+                          <Style>
+                            <TextAlign>Right</TextAlign>
+                          </Style>
+                        </Paragraph>
+                      </Paragraphs>
+                      <rd:DefaultName>Importe</rd:DefaultName>
+                      <Style>
+                        <Border>
+                          <Color>LightGrey</Color>
+                          <Style>None</Style>
+                        </Border>
+                        <PaddingLeft>2pt</PaddingLeft>
+                        <PaddingRight>2pt</PaddingRight>
+                        <PaddingTop>2pt</PaddingTop>
+                        <PaddingBottom>2pt</PaddingBottom>
+                      </Style>
+                    </Textbox>
+                  </CellContents>
+                </TablixCell>
+              </TablixCells>
+            </TablixRow>
+          </TablixRows>
+        </TablixBody>
+        <TablixColumnHierarchy>
+          <TablixMembers>
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+            <TablixMember />
+          </TablixMembers>
+        </TablixColumnHierarchy>
+        <TablixRowHierarchy>
+          <TablixMembers>
+            <TablixMember>
+              <Group Name="Detalles" />
+            </TablixMember>
+          </TablixMembers>
+        </TablixRowHierarchy>
+        <DataSetName>dsDetalleRemVta</DataSetName>
+        <Top>5.7cm</Top>
+        <Left>1.28282cm</Left>
+        <Height>0.5cm</Height>
+        <Width>18.3cm</Width>
+        <ZIndex>1</ZIndex>
+        <Style>
+          <Border>
+            <Color>White</Color>
+            <Style>None</Style>
+            <Width>0.25pt</Width>
+          </Border>
+          <TopBorder>
+            <Color>White</Color>
+            <Style>None</Style>
+          </TopBorder>
+          <BottomBorder>
+            <Color>White</Color>
+            <Style>None</Style>
+          </BottomBorder>
+          <LeftBorder>
+            <Color>White</Color>
+            <Style>None</Style>
+          </LeftBorder>
+          <RightBorder>
+            <Color>White</Color>
+            <Style>None</Style>
+          </RightBorder>
+          <Color>White</Color>
+        </Style>
+      </Tablix>
+      <Textbox Name="Textbox45">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!RazonSocial.Value, "dsCliente")</Value>
+                <Style>
+                  <FontFamily>Arial Black</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox45</rd:DefaultName>
+        <Top>3.6cm</Top>
+        <Left>4.36704cm</Left>
+        <Height>0.6cm</Height>
+        <Width>10.27358cm</Width>
+        <ZIndex>2</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox4">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!IdCliente.Value, "dsCliente")</Value>
+                <Style>
+                  <FontFamily>Arial Black</FontFamily>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Center</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox4</rd:DefaultName>
+        <Top>3.6cm</Top>
+        <Left>3.03176cm</Left>
+        <Height>0.6cm</Height>
+        <Width>1.3cm</Width>
+        <ZIndex>3</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox1">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Direccion.Value, "dsCliente")+" - ("+First(Fields!CodPostal.Value, "dsCliente")+") "+First(Fields!Localidad.Value, "dsCliente")+" - "+First(Fields!Provincia.Value, "dsCliente")</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox1</rd:DefaultName>
+        <Top>4.5cm</Top>
+        <Left>3.49cm</Left>
+        <Height>0.5cm</Height>
+        <Width>11.14993cm</Width>
+        <ZIndex>4</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox6">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!CUIT.Value, "dsCliente")</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>3.7936cm</Top>
+        <Left>16.92779cm</Left>
+        <Height>0.5cm</Height>
+        <Width>2.95666cm</Width>
+        <ZIndex>5</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox9">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!SituacionIVA.Value, "dsCliente")</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>4.1936cm</Top>
+        <Left>16.92779cm</Left>
+        <Height>0.5cm</Height>
+        <Width>2.95666cm</Width>
+        <ZIndex>6</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox10">
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!IIBB.Value, "dsCliente")</Value>
+                <Style>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox6</rd:DefaultName>
+        <Top>4.7cm</Top>
+        <Left>16.92779cm</Left>
+        <Height>0.5cm</Height>
+        <Width>2.95666cm</Width>
+        <ZIndex>7</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox5">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Fecha.Value, "dsRemitoVenta")</Value>
+                <Style>
+                  <FontFamily>Arial Black</FontFamily>
+                  <FontSize>8pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>dd/MM/yyyy</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Left</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox4</rd:DefaultName>
+        <Top>2.3cm</Top>
+        <Left>14.99189cm</Left>
+        <Height>0.59417cm</Height>
+        <Width>3.65888cm</Width>
+        <ZIndex>8</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox42">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=First(Fields!Observaciones.Value, "dsRemitoVenta")</Value>
+                <Style>
+                  <FontSize>7pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style />
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox42</rd:DefaultName>
+        <Top>12.40103cm</Top>
+        <Left>3.51685cm</Left>
+        <Height>0.465cm</Height>
+        <Width>12.38959cm</Width>
+        <ZIndex>9</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+      <Textbox Name="Textbox44">
+        <CanGrow>true</CanGrow>
+        <KeepTogether>true</KeepTogether>
+        <Paragraphs>
+          <Paragraph>
+            <TextRuns>
+              <TextRun>
+                <Value>=Sum(Fields!Importe.Value, "dsRemitoVenta")</Value>
+                <Style>
+                  <FontSize>9pt</FontSize>
+                  <FontWeight>Bold</FontWeight>
+                  <Format>'USD' #,0.00;('USD' #,0.00)</Format>
+                </Style>
+              </TextRun>
+            </TextRuns>
+            <Style>
+              <TextAlign>Right</TextAlign>
+            </Style>
+          </Paragraph>
+        </Paragraphs>
+        <rd:DefaultName>Textbox42</rd:DefaultName>
+        <Top>12.3cm</Top>
+        <Left>16.08282cm</Left>
+        <Height>0.8cm</Height>
+        <Width>3.5cm</Width>
+        <ZIndex>10</ZIndex>
+        <Style>
+          <Border>
+            <Style>None</Style>
+          </Border>
+          <VerticalAlign>Middle</VerticalAlign>
+          <PaddingLeft>2pt</PaddingLeft>
+          <PaddingRight>2pt</PaddingRight>
+          <PaddingTop>2pt</PaddingTop>
+          <PaddingBottom>2pt</PaddingBottom>
+        </Style>
+      </Textbox>
+    </ReportItems>
+    <Height>29.7cm</Height>
+    <Style>
+      <Border>
+        <Style>None</Style>
+      </Border>
+    </Style>
+  </Body>
+  <Width>21cm</Width>
+  <Page>
+    <PageHeight>29.7cm</PageHeight>
+    <PageWidth>21cm</PageWidth>
+    <LeftMargin>0cm</LeftMargin>
+    <RightMargin>0cm</RightMargin>
+    <TopMargin>0cm</TopMargin>
+    <BottomMargin>0cm</BottomMargin>
+    <ColumnSpacing>0.13cm</ColumnSpacing>
+    <Style />
+  </Page>
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="Procesos">
+      <ConnectionProperties>
+        <DataProvider>System.Data.DataSet</DataProvider>
+        <ConnectString>/* Local Connection */</ConnectString>
+      </ConnectionProperties>
+      <rd:DataSourceID>c36ec4ab-3c4b-40fc-838d-322581ece24c</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="dsEmpresa">
+      <Query>
+        <DataSourceName>Procesos</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AscUsuarios">
+          <DataField>AscUsuarios</DataField>
+          <rd:TypeName>Procesos.Usuario</rd:TypeName>
+        </Field>
+        <Field Name="CodPostal">
+          <DataField>CodPostal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CondicionIVA">
+          <DataField>CondicionIVA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CUIT">
+          <DataField>CUIT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Direccion">
+          <DataField>Direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IdEmpresa">
+          <DataField>IdEmpresa</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IIBB">
+          <DataField>IIBB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="InicioActividad">
+          <DataField>InicioActividad</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="Localidad">
+          <DataField>Localidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Logo">
+          <DataField>Logo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Mail">
+          <DataField>Mail</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pais">
+          <DataField>Pais</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="PrefijoFacturacion">
+          <DataField>PrefijoFacturacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Provincia">
+          <DataField>Provincia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RazonSocial">
+          <DataField>RazonSocial</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="TE">
+          <DataField>TE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Web">
+          <DataField>Web</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Procesos</rd:DataSetName>
+        <rd:TableName>Empresa</rd:TableName>
+        <rd:ObjectDataSourceType>Procesos.Empresa, Procesos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsRemitoVenta">
+      <Query>
+        <DataSourceName>Procesos</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AscClientes">
+          <DataField>AscClientes</DataField>
+          <rd:TypeName>Procesos.Clientes</rd:TypeName>
+        </Field>
+        <Field Name="AscUsuarios">
+          <DataField>AscUsuarios</DataField>
+          <rd:TypeName>Procesos.Usuario</rd:TypeName>
+        </Field>
+        <Field Name="CAE">
+          <DataField>CAE</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Eliminado">
+          <DataField>Eliminado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Facturado">
+          <DataField>Facturado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Fecha">
+          <DataField>Fecha</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="FechaVtoCAE">
+          <DataField>FechaVtoCAE</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="IdRemitosVenta">
+          <DataField>IdRemitosVenta</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ImpCopia">
+          <DataField>ImpCopia</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="ImpOriginal">
+          <DataField>ImpOriginal</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Importe">
+          <DataField>Importe</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="NroComprobante">
+          <DataField>NroComprobante</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Observaciones">
+          <DataField>Observaciones</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Procesos</rd:DataSetName>
+        <rd:TableName>RemitoVenta</rd:TableName>
+        <rd:ObjectDataSourceType>Procesos.RemitoVenta, Procesos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsDetalleRemVta">
+      <Query>
+        <DataSourceName>Procesos</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AlicuotaIVA">
+          <DataField>AlicuotaIVA</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="AscArticulos">
+          <DataField>AscArticulos</DataField>
+          <rd:TypeName>Procesos.Articulos</rd:TypeName>
+        </Field>
+        <Field Name="AscPedidoDetalle">
+          <DataField>AscPedidoDetalle</DataField>
+          <rd:TypeName>Procesos.DetalleReserva</rd:TypeName>
+        </Field>
+        <Field Name="AscRemitosVenta">
+          <DataField>AscRemitosVenta</DataField>
+          <rd:TypeName>Procesos.RemitoVenta</rd:TypeName>
+        </Field>
+        <Field Name="AscStock">
+          <DataField>AscStock</DataField>
+          <rd:TypeName>Procesos.Stock</rd:TypeName>
+        </Field>
+        <Field Name="Cantidad">
+          <DataField>Cantidad</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CantidadFacturada">
+          <DataField>CantidadFacturada</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Descripcion">
+          <DataField>Descripcion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Eliminado">
+          <DataField>Eliminado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Facturado">
+          <DataField>Facturado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IdDetalleRemitosVenta">
+          <DataField>IdDetalleRemitosVenta</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Importe">
+          <DataField>Importe</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Precio">
+          <DataField>Precio</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="Unidad">
+          <DataField>Unidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Procesos</rd:DataSetName>
+        <rd:TableName>DetalleRemitoVenta</rd:TableName>
+        <rd:ObjectDataSourceType>Procesos.DetalleRemitoVenta, Procesos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsComprobantes">
+      <Query>
+        <DataSourceName>Procesos</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AscUsuarios">
+          <DataField>AscUsuarios</DataField>
+          <rd:TypeName>Procesos.Usuario</rd:TypeName>
+        </Field>
+        <Field Name="CantidadCompEmitidos">
+          <DataField>CantidadCompEmitidos</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="CantidadCopiasComp">
+          <DataField>CantidadCopiasComp</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Copias">
+          <DataField>Copias</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Eliminado">
+          <DataField>Eliminado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Encabezado">
+          <DataField>Encabezado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="IdComprobantes">
+          <DataField>IdComprobantes</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="Leyenda">
+          <DataField>Leyenda</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LeyendaEnc">
+          <DataField>LeyendaEnc</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="LeyendaPie">
+          <DataField>LeyendaPie</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Nombre">
+          <DataField>Nombre</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pie">
+          <DataField>Pie</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Tipo">
+          <DataField>Tipo</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Procesos</rd:DataSetName>
+        <rd:TableName>Comprobantes</rd:TableName>
+        <rd:ObjectDataSourceType>Procesos.Comprobantes, Procesos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+    <DataSet Name="dsCliente">
+      <Query>
+        <DataSourceName>Procesos</DataSourceName>
+        <CommandText>/* Local Query */</CommandText>
+      </Query>
+      <Fields>
+        <Field Name="AscUsuarios">
+          <DataField>AscUsuarios</DataField>
+          <rd:TypeName>Procesos.Usuario</rd:TypeName>
+        </Field>
+        <Field Name="Clasificacion">
+          <DataField>Clasificacion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CodPostal">
+          <DataField>CodPostal</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="CreditoAsignado">
+          <DataField>CreditoAsignado</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CreditoConsumido">
+          <DataField>CreditoConsumido</DataField>
+          <rd:TypeName>System.Double</rd:TypeName>
+        </Field>
+        <Field Name="CUIT">
+          <DataField>CUIT</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Direccion">
+          <DataField>Direccion</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Eliminado">
+          <DataField>Eliminado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Estado">
+          <DataField>Estado</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="FechaAlta">
+          <DataField>FechaAlta</DataField>
+          <rd:TypeName>System.DateTime</rd:TypeName>
+        </Field>
+        <Field Name="IdCliente">
+          <DataField>IdCliente</DataField>
+          <rd:TypeName>System.Int32</rd:TypeName>
+        </Field>
+        <Field Name="IIBB">
+          <DataField>IIBB</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Localidad">
+          <DataField>Localidad</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Mail">
+          <DataField>Mail</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Pais">
+          <DataField>Pais</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Provincia">
+          <DataField>Provincia</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="RazonSocial">
+          <DataField>RazonSocial</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="SituacionIVA">
+          <DataField>SituacionIVA</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Telefono">
+          <DataField>Telefono</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+        <Field Name="Web">
+          <DataField>Web</DataField>
+          <rd:TypeName>System.String</rd:TypeName>
+        </Field>
+      </Fields>
+      <rd:DataSetInfo>
+        <rd:DataSetName>Procesos</rd:DataSetName>
+        <rd:TableName>Clientes</rd:TableName>
+        <rd:ObjectDataSourceType>Procesos.Clientes, Procesos, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</rd:ObjectDataSourceType>
+      </rd:DataSetInfo>
+    </DataSet>
+  </DataSets>
+  <EmbeddedImages>
+    <EmbeddedImage Name="LetraR">
+      <MIMEType>image/jpeg</MIMEType>
+      <ImageData>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</ImageData>
+    </EmbeddedImage>
+  </EmbeddedImages>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>3798b820-6ce6-44ea-9cf4-f2c437a1ff7b</rd:ReportID>
+</Report>

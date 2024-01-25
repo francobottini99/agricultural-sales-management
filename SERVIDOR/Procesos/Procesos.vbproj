@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50CDE070-C4B6-4724-8BD2-3F99D45D208A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Procesos</RootNamespace>
+    <AssemblyName>Procesos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Procesos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Procesos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WSAFIPFE">
+      <HintPath>C:\Program Files (x86)\SC\WSAFIPFE\WSAFIPFE.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AFIP\Facturacion.vb" />
+    <Compile Include="AFIP\RespuestaCAE\FEResultCAE.vb" />
+    <Compile Include="AFIP\Auxiliares\CbteAsoc.vb" />
+    <Compile Include="AFIP\Auxiliares\EnumConceptos.vb" />
+    <Compile Include="AFIP\SolitudCAE\FECabeceraRequest.vb" />
+    <Compile Include="AFIP\SolitudCAE\FEDetalleRequestCAE.vb" />
+    <Compile Include="AFIP\SolitudCAE\FERequestCAE.vb" />
+    <Compile Include="AFIP\Auxiliares\Iva.vb" />
+    <Compile Include="AFIP\Auxiliares\Opcional.vb" />
+    <Compile Include="AFIP\Auxiliares\Tributo.vb" />
+    <Compile Include="AFIP\ConexionAFIP.vb" />
+    <Compile Include="Comunicacion\RespuestaHTTP.vb" />
+    <Compile Include="Modelos\ModeloCaja.vb" />
+    <Compile Include="Modelos\ModeloDetalleDevoluciones.vb" />
+    <Compile Include="Modelos\ModeloDevoluciones.vb" />
+    <Compile Include="Modelos\ModeloDevolucionesMonedas.vb" />
+    <Compile Include="Modelos\ModeloFacturaCompraMovimientos.vb" />
+    <Compile Include="Modelos\ModeloFacturaVentaMovimientos.vb" />
+    <Compile Include="Modelos\ModeloMovimientos_Remito_Factura.vb" />
+    <Compile Include="Modelos\ModeloMovimientos_Reserva_Remito.vb" />
+    <Compile Include="Modelos\ModeloMovimientoValores.vb" />
+    <Compile Include="Modelos\ModeloNumeracion.vb" />
+    <Compile Include="Modelos\ModeloOrdenDePago.vb" />
+    <Compile Include="Modelos\ModeloOrdenDePagoDetalle.vb" />
+    <Compile Include="Modelos\ModeloOrdenDePagoMonedas.vb" />
+    <Compile Include="Modelos\ModeloProveedores.vb" />
+    <Compile Include="Modelos\ModeloArticulos.vb" />
+    <Compile Include="Modelos\ModeloDepositos.vb" />
+    <Compile Include="Modelos\ModeloDatosSistema.vb" />
+    <Compile Include="Modelos\ModeloDetalleRemitoVenta.vb" />
+    <Compile Include="Modelos\ModeloPedidoMovimientos.vb" />
+    <Compile Include="Modelos\ModeloRecibosVenta.vb" />
+    <Compile Include="Modelos\ModeloRecibosVentaDetalle.vb" />
+    <Compile Include="Modelos\ModeloRecibosVentaMonedas.vb" />
+    <Compile Include="Modelos\ModeloRegistroOperaciones.vb" />
+    <Compile Include="Modelos\ModeloRemitosCompraMovimientos.vb" />
+    <Compile Include="Modelos\ModeloRemitosVenta.vb" />
+    <Compile Include="Modelos\ModeloRemitosVentaMonedas.vb" />
+    <Compile Include="Modelos\ModeloPerfilUsuario.vb" />
+    <Compile Include="Modelos\ModeloCliente.vb" />
+    <Compile Include="Modelos\ModeloPedidoDetalle.vb" />
+    <Compile Include="Modelos\ModeloPedidos.vb" />
+    <Compile Include="Modelos\ModeloRemitosVentaMovimientos.vb" />
+    <Compile Include="Modelos\ModeloRubro.vb" />
+    <Compile Include="Modelos\ModeloSubRubro.vb" />
+    <Compile Include="Modelos\ModeloUsuario.vb" />
+    <Compile Include="Modelos\ModeloStock.vb" />
+    <Compile Include="Modelos\ModeloBancos.vb" />
+    <Compile Include="Modelos\ModeloChequera.vb" />
+    <Compile Include="Modelos\ModeloComprobantes.vb" />
+    <Compile Include="Modelos\ModeloCuentaCorrienteCompra.vb" />
+    <Compile Include="Modelos\ModeloCuentaCorrienteVenta.vb" />
+    <Compile Include="Modelos\ModeloDetalleCheque.vb" />
+    <Compile Include="Modelos\ModeloDetalleRemitoCompra.vb" />
+    <Compile Include="Modelos\ModeloEmpresa.vb" />
+    <Compile Include="Modelos\ModeloFacturaComMonedas.vb" />
+    <Compile Include="Modelos\ModeloFacturaCompra.vb" />
+    <Compile Include="Modelos\ModeloFacturaCompraDetalle.vb" />
+    <Compile Include="Modelos\ModeloFacturaVenta.vb" />
+    <Compile Include="Modelos\ModeloFacturaVentaDetalle.vb" />
+    <Compile Include="Modelos\ModeloFacturaVentaMonedas.vb" />
+    <Compile Include="Modelos\ModeloMonedas.vb" />
+    <Compile Include="Modelos\ModeloParidadCambiaria.vb" />
+    <Compile Include="Modelos\ModeloRemitoComMonedas.vb" />
+    <Compile Include="Modelos\ModeloRemitosCompra.vb" />
+    <Compile Include="Modelos\ModeloMovimientos_Factura_Reserva.vb" />
+    <Compile Include="Modelos\ModeloMovimientos_RemitoCompra_FacturaCompra.vb" />
+    <Compile Include="Modelos\ModeloValoresEnCartera.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Servicios\ServicioArticulos.vb" />
+    <Compile Include="Servicios\ServicioChequera.vb" />
+    <Compile Include="Servicios\ServicioDetalleRemitoCompra.vb" />
+    <Compile Include="Servicios\ServicioDetalleRemitoVenta.vb" />
+    <Compile Include="Servicios\ServicioDevoluciones.vb" />
+    <Compile Include="Servicios\ServicioFacturaCompra.vb" />
+    <Compile Include="Servicios\ServicioFacturaCompraDetalle.vb" />
+    <Compile Include="Servicios\ServicioFacturaVenta.vb" />
+    <Compile Include="Servicios\ServicioFacturaVentaDetalle.vb" />
+    <Compile Include="Servicios\ServicioMovimientoValores.vb" />
+    <Compile Include="Servicios\ServicioOrdenDePago.vb" />
+    <Compile Include="Servicios\ServicioPedidos.vb" />
+    <Compile Include="Servicios\ServicioPedidosDetalle.vb" />
+    <Compile Include="Servicios\ServicioPerfilUsuario.vb" />
+    <Compile Include="Servicios\ServicioRecibosVenta.vb" />
+    <Compile Include="Servicios\ServicioRemitoCompra.vb" />
+    <Compile Include="Servicios\ServicioSubRubro.vb" />
+    <Compile Include="Servicios\ServicioAbrebiaciones.vb" />
+    <Compile Include="Servicios\ServicioBancos.vb" />
+    <Compile Include="Servicios\ServicioClientes.vb" />
+    <Compile Include="Servicios\ServicioDepositos.vb" />
+    <Compile Include="Servicios\ServicioParidadCambiaria.vb" />
+    <Compile Include="Servicios\ServicioProveedores.vb" />
+    <Compile Include="Servicios\ServicioRemitoVenta.vb" />
+    <Compile Include="Comunicacion\EnlaceTransacciones.vb" />
+    <Compile Include="Servicios\ServicioRubros.vb" />
+    <Compile Include="Servicios\ServicioUsuario.vb" />
+    <Compile Include="Utilidades\Abrebiaciones.vb" />
+    <Compile Include="Utilidades\Drivers.vb" />
+    <Compile Include="Utilidades\Encrypter.vb" />
+    <Compile Include="Utilidades\Errores.vb" />
+    <Compile Include="Utilidades\UtilidadesVarias.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AccesoDatos\AccesoDatos.vbproj">
+      <Project>{3498c800-7479-4139-9d27-83af961ad63b}</Project>
+      <Name>AccesoDatos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

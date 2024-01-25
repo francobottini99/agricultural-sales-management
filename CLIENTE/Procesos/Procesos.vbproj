@@ -1,0 +1,222 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{50414628-F68C-435B-8F69-3B9566B08AEF}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Procesos</RootNamespace>
+    <AssemblyName>Procesos</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Procesos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Procesos.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Comunicacion\EnlaceTransacciones.vb" />
+    <Compile Include="Entidades\Articulos.vb" />
+    <Compile Include="Entidades\Bancos.vb" />
+    <Compile Include="Entidades\Caja.vb" />
+    <Compile Include="Entidades\Chequeras.vb" />
+    <Compile Include="Entidades\Clientes.vb" />
+    <Compile Include="Entidades\Comprobantes.vb" />
+    <Compile Include="Entidades\CuentaCorrienteCompra.vb" />
+    <Compile Include="Entidades\CuentaCorrienteVenta.vb" />
+    <Compile Include="Entidades\DatosSistema.vb" />
+    <Compile Include="Entidades\Depositos.vb" />
+    <Compile Include="Entidades\DetalleCheque.vb" />
+    <Compile Include="Entidades\DetalleDevoluciones.vb" />
+    <Compile Include="Entidades\DetalleRemitoCompra.vb" />
+    <Compile Include="Entidades\DetalleRemitoVenta.vb" />
+    <Compile Include="Entidades\Devoluciones.vb" />
+    <Compile Include="Entidades\DevolucionesMonedas.vb" />
+    <Compile Include="Entidades\FacturaCompraMovimientos.vb" />
+    <Compile Include="Entidades\FacturaVentaMovimientos.vb" />
+    <Compile Include="Entidades\Movimientos_RemitoCompra_FacturaCompra.vb" />
+    <Compile Include="Entidades\MovimientoValores.vb" />
+    <Compile Include="Entidades\Numeracion.vb" />
+    <Compile Include="Entidades\OrdenDePago.vb" />
+    <Compile Include="Entidades\OrdenDePagoDetalle.vb" />
+    <Compile Include="Entidades\OrdenDePagoMonedas.vb" />
+    <Compile Include="Entidades\PedidosDetalle.vb" />
+    <Compile Include="Entidades\Empresa.vb" />
+    <Compile Include="Entidades\FacturaCompraMonedas.vb" />
+    <Compile Include="Entidades\FacturaCompra.vb" />
+    <Compile Include="Entidades\FacturaCompraDetalle.vb" />
+    <Compile Include="Entidades\FacturaVenta.vb" />
+    <Compile Include="Entidades\FacturaVentaDetalle.vb" />
+    <Compile Include="Entidades\FacturaVentaMonedas.vb" />
+    <Compile Include="Entidades\Monedas.vb" />
+    <Compile Include="Entidades\Movimientos_Factura_Reserva.vb" />
+    <Compile Include="Entidades\Movimientos_Remito_Factura.vb" />
+    <Compile Include="Entidades\Movimientos_Reserva_Remito.vb" />
+    <Compile Include="Entidades\ParidadCambiaria.vb" />
+    <Compile Include="Entidades\PerfilUsuario.vb" />
+    <Compile Include="Entidades\Proveedores.vb" />
+    <Compile Include="Entidades\RecibosVenta.vb" />
+    <Compile Include="Entidades\RecibosVentaDetalle.vb" />
+    <Compile Include="Entidades\RecibosVentaMonedas.vb" />
+    <Compile Include="Entidades\RemitoCompra.vb" />
+    <Compile Include="Entidades\RemitoCompraMonedas.vb" />
+    <Compile Include="Entidades\RemitoCompraMovimientos.vb" />
+    <Compile Include="Entidades\RemitoVentaMovimientos.vb" />
+    <Compile Include="Entidades\RemitoVenta.vb" />
+    <Compile Include="Entidades\RemitoVentaMonedas.vb" />
+    <Compile Include="Entidades\Pedidos.vb" />
+    <Compile Include="Entidades\PedidosMovimientos.vb" />
+    <Compile Include="Entidades\Rubros.vb" />
+    <Compile Include="Entidades\Stock.vb" />
+    <Compile Include="Entidades\SubRubros.vb" />
+    <Compile Include="Entidades\Usuario.vb" />
+    <Compile Include="Entidades\ValoresEnCartera.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tareas\TareasCuentaCorienteVenta.vb" />
+    <Compile Include="Tareas\TareasCuentaCorrienteCompra.vb" />
+    <Compile Include="Tareas\TareasDetalleCheque.vb" />
+    <Compile Include="Tareas\TareasDevoluciones.vb" />
+    <Compile Include="Tareas\TareasFacturaVentaMonedas.vb" />
+    <Compile Include="Tareas\TareasMovimientoValores.vb" />
+    <Compile Include="Tareas\TareasCaja.vb" />
+    <Compile Include="Tareas\TareasDetalleRemitoVenta.vb" />
+    <Compile Include="Tareas\TareasFacturaCompraMovimientos.vb" />
+    <Compile Include="Tareas\TareasMovimientos_RemitoCompra_FacturaCompra.vb" />
+    <Compile Include="Tareas\TareasMovimientos_Remito_Factura.vb" />
+    <Compile Include="Tareas\TareasMovimientos_Reserva_Remito.vb" />
+    <Compile Include="Tareas\TareasNumeracion.vb" />
+    <Compile Include="Tareas\TareasOrdenDePago.vb" />
+    <Compile Include="Tareas\TareasOrdenDePagoDetalle.vb" />
+    <Compile Include="Tareas\TareasOrdenDePagoMonedas.vb" />
+    <Compile Include="Tareas\TareasPedidosDetalle.vb" />
+    <Compile Include="Tareas\TareasArticulos.vb" />
+    <Compile Include="Tareas\TareasBancos.vb" />
+    <Compile Include="Tareas\TareasChequera.vb" />
+    <Compile Include="Tareas\TareasClientes.vb" />
+    <Compile Include="Tareas\TareasComprobantes.vb" />
+    <Compile Include="Tareas\TareasDatosSisitema.vb" />
+    <Compile Include="Tareas\TareasDepositos.vb" />
+    <Compile Include="Tareas\TareasDetalleRemitoCompra.vb" />
+    <Compile Include="Tareas\TareasEmpresa.vb" />
+    <Compile Include="Tareas\TareasFacturaCompra.vb" />
+    <Compile Include="Tareas\TareasFacturaCompraDetalle.vb" />
+    <Compile Include="Tareas\TareasFacturaCompraMonedas.vb" />
+    <Compile Include="Tareas\TareasFacturaVenta.vb" />
+    <Compile Include="Tareas\TareasFacturaVentaDetalle.vb" />
+    <Compile Include="Tareas\TareasMonedas.vb" />
+    <Compile Include="Tareas\TareasParidadCamb.vb" />
+    <Compile Include="Tareas\TareasPerfilUsuario.vb" />
+    <Compile Include="Tareas\TareasProveedores.vb" />
+    <Compile Include="Tareas\TareasRecibosVenta.vb" />
+    <Compile Include="Tareas\TareasRemitoCompra.vb" />
+    <Compile Include="Tareas\TareasRemitoCompraMoneda.vb" />
+    <Compile Include="Tareas\TareasRemitoCompraMovimientos.vb" />
+    <Compile Include="Tareas\TareasRemitoVentaMovimientos.vb" />
+    <Compile Include="Tareas\TareasRemitoVenta.vb" />
+    <Compile Include="Tareas\TareasRemitoVentaMoneda.vb" />
+    <Compile Include="Tareas\TareasPedidos.vb" />
+    <Compile Include="Tareas\TareasRubros.vb" />
+    <Compile Include="Tareas\TareasStock.vb" />
+    <Compile Include="Tareas\TareasSubRubro.vb" />
+    <Compile Include="Tareas\TareasUsuario.vb" />
+    <Compile Include="Tareas\TareasValoresEnCartera.vb" />
+    <Compile Include="Utilidades\CodigoBarraAFIP.vb" />
+    <Compile Include="Utilidades\DatosSesion.vb" />
+    <Compile Include="Utilidades\Drivers.vb" />
+    <Compile Include="Utilidades\Errores.vb" />
+    <Compile Include="Utilidades\UtilidadesVarias.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Comunicacion\Comunicacion.vbproj">
+      <Project>{88f7268f-1d5a-41ac-87c4-69e6e4d4785b}</Project>
+      <Name>Comunicacion</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

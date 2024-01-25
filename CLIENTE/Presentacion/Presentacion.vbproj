@@ -1,0 +1,1156 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E1A1E201-CDE8-4071-860B-89434B0D64DB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Presentacion.My.MyApplication</StartupObject>
+    <RootNamespace>Presentacion</RootNamespace>
+    <AssemblyName>Presentacion</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Presentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Presentacion.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoSIGEVA.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>bin\Debug\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1404.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks">
+      <HintPath>bin\Debug\Microsoft.VisualBasic.PowerPacks.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Formularios\Auxiliares\frmReporte.Designer.vb">
+      <DependentUpon>frmReporte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Auxiliares\frmReporte.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Compras\frmCtaCteCompra.Designer.vb">
+      <DependentUpon>frmCtaCteCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Compras\frmCtaCteCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Ventas\frmCtaCteVenta.Designer.vb">
+      <DependentUpon>frmCtaCteVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Consultas\Ventas\frmCtaCteVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Devoluciones\frmArticuloDevoluciones.Designer.vb">
+      <DependentUpon>frmArticuloDevoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Devoluciones\frmArticuloDevoluciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Devoluciones\frmDevoluciones.Designer.vb">
+      <DependentUpon>frmDevoluciones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Devoluciones\frmDevoluciones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Devoluciones\frmDevolucionesrRetiradoCliente.Designer.vb">
+      <DependentUpon>frmDevolucionesrRetiradoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Devoluciones\frmDevolucionesrRetiradoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Recibo\frmReciboVenta.Designer.vb">
+      <DependentUpon>frmReciboVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Recibo\frmReciboVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Recibo\frmReciboVentaDetalle.Designer.vb">
+      <DependentUpon>frmReciboVentaDetalle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Recibo\frmReciboVentaDetalle.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\xSin Completar\frmCtasContables.Designer.vb">
+      <DependentUpon>frmCtasContables.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\xSin Completar\frmCtasContables.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sistema\frmPtoVta.Designer.vb">
+      <DependentUpon>frmPtoVta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sistema\frmPtoVta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Caja\frmCaja.Designer.vb">
+      <DependentUpon>frmCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Caja\frmCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Caja\frmMovimientosCaja.Designer.vb">
+      <DependentUpon>frmMovimientosCaja.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Caja\frmMovimientosCaja.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmArticuloFacturaCompraNuevo.Designer.vb">
+      <DependentUpon>frmArticuloFacturaCompraNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmArticuloFacturaCompraNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmArticuloFacturaCompraRemito.Designer.vb">
+      <DependentUpon>frmArticuloFacturaCompraRemito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmArticuloFacturaCompraRemito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmRemitoNuevoProveedor.Designer.vb">
+      <DependentUpon>frmRemitoNuevoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmRemitoNuevoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPagoEfectivo.Designer.vb">
+      <DependentUpon>frmOrdenPagoEfectivo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPagoEfectivo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPagoChequePropio.Designer.vb">
+      <DependentUpon>frmOrdenPagoChequePropio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPagoChequePropio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaOrdenDePago.Designer.vb">
+      <DependentUpon>frmListaOrdenDePago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaOrdenDePago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaValoresEnCartera.Designer.vb">
+      <DependentUpon>frmListaValoresEnCartera.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaValoresEnCartera.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Remito\frmArticuloRemitoCompraFactura.Designer.vb">
+      <DependentUpon>frmArticuloRemitoCompraFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Remito\frmArticuloRemitoCompraFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Remito\frmArticuloRemitoCompraNuevo.Designer.vb">
+      <DependentUpon>frmArticuloRemitoCompraNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Remito\frmArticuloRemitoCompraNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Remito\frmFacturaNuevoProveedor.Designer.vb">
+      <DependentUpon>frmFacturaNuevoProveedor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Remito\frmFacturaNuevoProveedor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaNuevo.Designer.vb">
+      <DependentUpon>frmArticuloFacturaVentaNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaRemito.Designer.vb">
+      <DependentUpon>frmArticuloFacturaVentaRemito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaRemito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaReserva.Designer.vb">
+      <DependentUpon>frmArticuloFacturaVentaReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmReservaRemitoNuevoCliente.Designer.vb">
+      <DependentUpon>frmReservaRemitoNuevoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmReservaRemitoNuevoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmServicioFacturaVenta.Designer.vb">
+      <DependentUpon>frmServicioFacturaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmServicioFacturaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaFactura.Designer.vb">
+      <DependentUpon>frmArticuloRemitoVentaFactura.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaFactura.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmReservaFacturaNuevoCliente.Designer.vb">
+      <DependentUpon>frmReservaFacturaNuevoCliente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmReservaFacturaNuevoCliente.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principales\frmInicio.Designer.vb">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Principales\frmInicio.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPago.Designer.vb">
+      <DependentUpon>frmOrdenPago.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPago.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Utilidades\dgvBoxHeaderCell.vb" />
+    <Compile Include="Formularios\Altas\frmArticulos.Designer.vb">
+      <DependentUpon>frmArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmChequeras.Designer.vb">
+      <DependentUpon>frmChequeras.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmChequeras.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmFacturaCompra.Designer.vb">
+      <DependentUpon>frmFacturaCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmFacturaCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmServicioFacturaCompra.Designer.vb">
+      <DependentUpon>frmServicioFacturaCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Factura\frmServicioFacturaCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmFacturaVenta.Designer.vb">
+      <DependentUpon>frmFacturaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Factura\frmFacturaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaNuevo.Designer.vb">
+      <DependentUpon>frmArticuloRemitoVentaNuevo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaNuevo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmRemitoVenta.Designer.vb">
+      <DependentUpon>frmRemitoVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmRemitoVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaReserva.Designer.vb">
+      <DependentUpon>frmArticuloRemitoVentaReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Reservas\frmArticuloReserva.Designer.vb">
+      <DependentUpon>frmArticuloReserva.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Reservas\frmArticuloReserva.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Reservas\frmReservasVta.Designer.vb">
+      <DependentUpon>frmReservasVta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Ventas\Reservas\frmReservasVta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaArticulos.Designer.vb">
+      <DependentUpon>frmListaArticulos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaArticulos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaClientes.Designer.vb">
+      <DependentUpon>frmListaClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaFacturaCompra.Designer.vb">
+      <DependentUpon>frmListaFacturaCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaFacturaCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\xSin Completar\frmListaFacturaVenta.Designer.vb">
+      <DependentUpon>frmListaFacturaVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\xSin Completar\frmListaFacturaVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaProveedores.Designer.vb">
+      <DependentUpon>frmListaProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaRemitosCompra.Designer.vb">
+      <DependentUpon>frmListaRemitosCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaRemitosCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmBancos.Designer.vb">
+      <DependentUpon>frmBancos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmBancos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmCategorias.Designer.vb">
+      <DependentUpon>frmCategorias.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmCategorias.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmClientes.Designer.vb">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmClientes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmDeposito.Designer.vb">
+      <DependentUpon>frmDeposito.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmDeposito.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmProveedores.Designer.vb">
+      <DependentUpon>frmProveedores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmProveedores.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaDepositos.Designer.vb">
+      <DependentUpon>frmListaDepositos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaDepositos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Remito\frmRemitoCompra.Designer.vb">
+      <DependentUpon>frmRemitoCompra.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Gestion\Compras\Remito\frmRemitoCompra.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaRemitosVenta.Designer.vb">
+      <DependentUpon>frmListaRemitosVenta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaRemitosVenta.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaReservas.Designer.vb">
+      <DependentUpon>frmListaReservas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Listas\frmListaReservas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sistema\frmComprobantes.Designer.vb">
+      <DependentUpon>frmComprobantes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sistema\frmComprobantes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Sistema\frmEmpresa.Designer.vb">
+      <DependentUpon>frmEmpresa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Sistema\frmEmpresa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\xSin Completar\frmMonedas.Designer.vb">
+      <DependentUpon>frmMonedas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\xSin Completar\frmMonedas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Auxiliares\frmMsg.Designer.vb">
+      <DependentUpon>frmMsg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Auxiliares\frmMsg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmPerfilUs.Designer.vb">
+      <DependentUpon>frmPerfilUs.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Seguridad\frmPerfilUs.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Auxiliares\frmProceso.Designer.vb">
+      <DependentUpon>frmProceso.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Auxiliares\frmProceso.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Auxiliares\frmInicioSistema.Designer.vb">
+      <DependentUpon>frmInicioSistema.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Auxiliares\frmInicioSistema.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principales\frmLogin.Designer.vb">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Principales\frmLogin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principales\frmPPal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Principales\frmPPal.Designer.vb">
+      <DependentUpon>frmPPal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmUsuarios.Designer.vb">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Formularios\Altas\frmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Utilidades\Notificaciones.vb" />
+    <Compile Include="Utilidades\Numalet.vb" />
+    <Compile Include="Utilidades\Reportes.vb" />
+    <Compile Include="Utilidades\UtilidadesDGV.vb" />
+    <Compile Include="Utilidades\UtilidadesListas.vb" />
+    <Compile Include="Utilidades\UtilidadesTXT.vb" />
+    <Compile Include="Utilidades\UtilidadesVarias.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Formularios\Altas\frmArticulos.resx">
+      <DependentUpon>frmArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Altas\frmBancos.resx">
+      <DependentUpon>frmBancos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Altas\frmCategorias.resx">
+      <DependentUpon>frmCategorias.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Altas\frmClientes.resx">
+      <DependentUpon>frmClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Auxiliares\frmReporte.resx">
+      <DependentUpon>frmReporte.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Compras\frmCtaCteCompra.resx">
+      <DependentUpon>frmCtaCteCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Consultas\Ventas\frmCtaCteVenta.resx">
+      <DependentUpon>frmCtaCteVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Devoluciones\frmArticuloDevoluciones.resx">
+      <DependentUpon>frmArticuloDevoluciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Devoluciones\frmDevoluciones.resx">
+      <DependentUpon>frmDevoluciones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Devoluciones\frmDevolucionesrRetiradoCliente.resx">
+      <DependentUpon>frmDevolucionesrRetiradoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Recibo\frmReciboVenta.resx">
+      <DependentUpon>frmReciboVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Recibo\frmReciboVentaDetalle.resx">
+      <DependentUpon>frmReciboVentaDetalle.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\xSin Completar\frmCtasContables.resx">
+      <DependentUpon>frmCtasContables.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Altas\frmDeposito.resx">
+      <DependentUpon>frmDeposito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Altas\frmProveedores.resx">
+      <DependentUpon>frmProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Altas\frmChequeras.resx">
+      <DependentUpon>frmChequeras.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sistema\frmPtoVta.resx">
+      <DependentUpon>frmPtoVta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Caja\frmCaja.resx">
+      <DependentUpon>frmCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Caja\frmMovimientosCaja.resx">
+      <DependentUpon>frmMovimientosCaja.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Factura\frmArticuloFacturaCompraNuevo.resx">
+      <DependentUpon>frmArticuloFacturaCompraNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Factura\frmArticuloFacturaCompraRemito.resx">
+      <DependentUpon>frmArticuloFacturaCompraRemito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Factura\frmFacturaCompra.resx">
+      <DependentUpon>frmFacturaCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Factura\frmRemitoNuevoProveedor.resx">
+      <DependentUpon>frmRemitoNuevoProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Factura\frmServicioFacturaCompra.resx">
+      <DependentUpon>frmServicioFacturaCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPagoEfectivo.resx">
+      <DependentUpon>frmOrdenPagoEfectivo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPagoChequePropio.resx">
+      <DependentUpon>frmOrdenPagoChequePropio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaOrdenDePago.resx">
+      <DependentUpon>frmListaOrdenDePago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaValoresEnCartera.resx">
+      <DependentUpon>frmListaValoresEnCartera.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Remito\frmArticuloRemitoCompraFactura.resx">
+      <DependentUpon>frmArticuloRemitoCompraFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Remito\frmArticuloRemitoCompraNuevo.resx">
+      <DependentUpon>frmArticuloRemitoCompraNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Remito\frmFacturaNuevoProveedor.resx">
+      <DependentUpon>frmFacturaNuevoProveedor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaNuevo.resx">
+      <DependentUpon>frmArticuloFacturaVentaNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaRemito.resx">
+      <DependentUpon>frmArticuloFacturaVentaRemito.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Factura\frmArticuloFacturaVentaReserva.resx">
+      <DependentUpon>frmArticuloFacturaVentaReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Factura\frmFacturaVenta.resx">
+      <DependentUpon>frmFacturaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Factura\frmReservaRemitoNuevoCliente.resx">
+      <DependentUpon>frmReservaRemitoNuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Factura\frmServicioFacturaVenta.resx">
+      <DependentUpon>frmServicioFacturaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaFactura.resx">
+      <DependentUpon>frmArticuloRemitoVentaFactura.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principales\frmInicio.resx">
+      <DependentUpon>frmInicio.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaNuevo.resx">
+      <DependentUpon>frmArticuloRemitoVentaNuevo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Remito\frmRemitoVenta.resx">
+      <DependentUpon>frmRemitoVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Remito\frmReservaFacturaNuevoCliente.resx">
+      <DependentUpon>frmReservaFacturaNuevoCliente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Remito\frmArticuloRemitoVentaReserva.resx">
+      <DependentUpon>frmArticuloRemitoVentaReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Reservas\frmArticuloReserva.resx">
+      <DependentUpon>frmArticuloReserva.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Ventas\Reservas\frmReservasVta.resx">
+      <DependentUpon>frmReservasVta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaArticulos.resx">
+      <DependentUpon>frmListaArticulos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaClientes.resx">
+      <DependentUpon>frmListaClientes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaDepositos.resx">
+      <DependentUpon>frmListaDepositos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaFacturaCompra.resx">
+      <DependentUpon>frmListaFacturaCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\xSin Completar\frmListaFacturaVenta.resx">
+      <DependentUpon>frmListaFacturaVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaProveedores.resx">
+      <DependentUpon>frmListaProveedores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaRemitosCompra.resx">
+      <DependentUpon>frmListaRemitosCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Remito\frmRemitoCompra.resx">
+      <DependentUpon>frmRemitoCompra.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaRemitosVenta.resx">
+      <DependentUpon>frmListaRemitosVenta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Listas\frmListaReservas.resx">
+      <DependentUpon>frmListaReservas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sistema\frmComprobantes.resx">
+      <DependentUpon>frmComprobantes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Sistema\frmEmpresa.resx">
+      <DependentUpon>frmEmpresa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\xSin Completar\frmMonedas.resx">
+      <DependentUpon>frmMonedas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Auxiliares\frmInicioSistema.resx">
+      <DependentUpon>frmInicioSistema.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principales\frmLogin.resx">
+      <DependentUpon>frmLogin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Auxiliares\frmMsg.resx">
+      <DependentUpon>frmMsg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Seguridad\frmPerfilUs.resx">
+      <DependentUpon>frmPerfilUs.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Principales\frmPPal.resx">
+      <DependentUpon>frmPPal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Auxiliares\frmProceso.resx">
+      <DependentUpon>frmProceso.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Altas\frmUsuarios.resx">
+      <DependentUpon>frmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formularios\Gestion\Compras\Orden de Pago\frmOrdenPago.resx">
+      <DependentUpon>frmOrdenPago.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reportes\rptCtaCteCompra.rdlc" />
+    <EmbeddedResource Include="Reportes\rptCtaCteVenta.rdlc" />
+    <EmbeddedResource Include="Reportes\rptFacturaVenta.rdlc" />
+    <EmbeddedResource Include="Reportes\rptFacturaVenta_1.rdlc" />
+    <EmbeddedResource Include="Reportes\rptFacturaVenta_2.rdlc" />
+    <EmbeddedResource Include="Reportes\rptOrdenPago.rdlc" />
+    <EmbeddedResource Include="Reportes\rptReciboVenta.rdlc" />
+    <EmbeddedResource Include="Reportes\rptRemitoVenta.rdlc" />
+    <EmbeddedResource Include="Reportes\rptReservass.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\Procesos.Clientes.datasource" />
+    <None Include="My Project\DataSources\Procesos.CodigoBarraAFIP.datasource" />
+    <None Include="My Project\DataSources\Procesos.Comprobantes.datasource" />
+    <None Include="My Project\DataSources\Procesos.CuentaCorrienteCompra.datasource" />
+    <None Include="My Project\DataSources\Procesos.CuentaCorrienteVenta.datasource" />
+    <None Include="My Project\DataSources\Procesos.DatosSistema.datasource" />
+    <None Include="My Project\DataSources\Procesos.DetalleRemitoVenta.datasource" />
+    <None Include="My Project\DataSources\Procesos.Empresa.datasource" />
+    <None Include="My Project\DataSources\Procesos.FacturaVenta.datasource" />
+    <None Include="My Project\DataSources\Procesos.FacturaVentaDetalle.datasource" />
+    <None Include="My Project\DataSources\Procesos.FacturaVentaMonedas.datasource" />
+    <None Include="My Project\DataSources\Procesos.Numeracion.datasource" />
+    <None Include="My Project\DataSources\Procesos.OrdenDePago.datasource" />
+    <None Include="My Project\DataSources\Procesos.OrdenDePagoDetalle.datasource" />
+    <None Include="My Project\DataSources\Procesos.Pedidos.datasource" />
+    <None Include="My Project\DataSources\Procesos.PedidosDetalle.datasource" />
+    <None Include="My Project\DataSources\Procesos.PedidosMovimientos.datasource" />
+    <None Include="My Project\DataSources\Procesos.Proveedores.datasource" />
+    <None Include="My Project\DataSources\Procesos.RecibosVenta.datasource" />
+    <None Include="My Project\DataSources\Procesos.RecibosVentaDetalle.datasource" />
+    <None Include="My Project\DataSources\Procesos.RemitoVenta.datasource" />
+    <None Include="My Project\DataSources\Procesos.RemitoVentaMonedas.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\Icono Empresa 2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Maximizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Minimizar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Achicar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Sistema1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Achicar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Minimizar1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icono Ingresar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Usuario.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cerrar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\minimazar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\maxi.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\res.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoSistema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoAlrtas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoAlrta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\iconoAltas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoGestion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoStock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoConsultas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reportes1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoSeguridad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoSalir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LogoBlanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoEmpresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoUsuario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoBarraInferior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnEmpresa.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoMoneda.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoComprobante.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoAlicuota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoProveedores.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoProveedor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoBanco.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoBancos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoDeposito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoCompras.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoVentas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoCanjes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoCaja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoRemito.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoFactura.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoNota.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoOrdenPago.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoPedido.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoRecibo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoArticulos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoContrato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoGasto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoCategorias.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoFijarContrato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoCartaPorte.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoLiquidaciones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoRetiro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoDepositoBancario.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoChequera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IconoCajaMovimiento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogoBlanco.ico" />
+    <Content Include="Logo.ico" />
+    <Content Include="LogoSIGEVA.ico" />
+    <None Include="Resources\IconoServicio.png" />
+    <None Include="Resources\IconoServicio1.png" />
+    <None Include="Resources\IconoOk_Minimalista.png" />
+    <None Include="Resources\IconoOk_Minimalista1.png" />
+    <None Include="Resources\IconoError_Minimalista.png" />
+    <None Include="Resources\IconoAlerta_Minimalista.png" />
+    <None Include="Resources\IconoPregunta_Minimalista.png" />
+    <None Include="Resources\IconoInformacion_Minimalista.png" />
+    <None Include="Resources\IconoCalendario.png" />
+    <None Include="Resources\IconoUbicacion.png" />
+    <None Include="Resources\IconoCuentaCorriente.png" />
+    <None Include="Resources\IconoCuentaCorriente1.png" />
+    <None Include="Resources\IconoCuentaCorriente2.png" />
+    <None Include="Resources\IconoImprimir.png" />
+    <None Include="Resources\IconoFactura1.png" />
+    <None Include="Resources\IconoDevoluciones.png" />
+    <None Include="Resources\IconoRemito1.png" />
+    <None Include="Resources\IconoFactura2.png" />
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\IconoAceptar3.png" />
+    <None Include="Resources\iconoQuitar1.png" />
+    <None Include="Resources\iconoQuitar.png" />
+    <None Include="Resources\IconoEditar3.png" />
+    <None Include="Resources\IconoEditar2.png" />
+    <None Include="Resources\IconoEditar1.png" />
+    <None Include="Resources\IconoEditar.png" />
+    <None Include="Resources\IconoAgregar2.png" />
+    <None Include="Resources\IconoAgregar1.png" />
+    <None Include="Resources\IconoAgregar.png" />
+    <None Include="Resources\IconoAceptar2.png" />
+    <None Include="Resources\IconoAceptar1.png" />
+    <None Include="Resources\IconoAceptar.png" />
+    <None Include="Resources\IconoCategoriasRecortado.png" />
+    <None Include="Resources\IconoArticulo.png" />
+    <None Include="Resources\IconoBidon.png" />
+    <None Include="Resources\IconoImagenRecortado.png" />
+    <None Include="Resources\IconoOk.png" />
+    <None Include="Resources\IconoError1.png" />
+    <None Include="Resources\Icono Ok3.jpg" />
+    <None Include="Resources\Icono Error1.jpg" />
+    <None Include="Resources\Icono Ok2.jpg" />
+    <None Include="Resources\Icono Ok1.jpg" />
+    <None Include="Resources\Icono Alerta1.png" />
+    <None Include="Resources\Icono Ok.jpg" />
+    <None Include="Resources\Icono Informacion.png" />
+    <None Include="Resources\Icono Error.jpg" />
+    <None Include="Resources\Icono Alerta.png" />
+    <None Include="Resources\IconoBorrarRecortadoNegro.png" />
+    <None Include="Resources\IconoCancelarRecortadoNegro.png" />
+    <None Include="Resources\IconoGuardarRecortadoNegro.png" />
+    <None Include="Resources\IconoModificarRecortadoNegro.png" />
+    <None Include="Resources\IconoNuevoRecortadoNegro.png" />
+    <None Include="Resources\IconoBorrarRecortado.png" />
+    <None Include="Resources\IconoCancelarRecortado.png" />
+    <None Include="Resources\IconoGuardarRecortado.png" />
+    <None Include="Resources\IconoModificarRecortado1.png" />
+    <None Include="Resources\IconoModificarRecortado.png" />
+    <None Include="Resources\IconoNuevoRecortado.png" />
+    <None Include="Resources\IconoTildeBlanco.png" />
+    <None Include="Resources\IconoCerrarVerde.png" />
+    <None Include="Resources\IconoCerrar.png" />
+    <None Include="Resources\IconoPregunta.png" />
+    <None Include="Resources\IconoError.png" />
+    <None Include="Resources\IconoTilde.png" />
+    <None Include="Resources\Gif Proceso 41.gif" />
+    <None Include="Resources\checkmark.gif" />
+    <None Include="Resources\SIGEVA_GRIS.png" />
+    <None Include="Resources\Carga.png" />
+    <None Include="Resources\SIGEVA.png" />
+    <None Include="Resources\IconoConsultasNota.png" />
+    <None Include="Resources\IconoConsultasFactura.png" />
+    <None Include="Resources\IconoConsultasRemito.png" />
+    <None Include="Resources\IconoModificarNegro.png" />
+    <None Include="Resources\IconoNuevoNegro.png" />
+    <None Include="Resources\IconoImagenNegro.png" />
+    <None Include="Resources\IconoBorrarNegro1.png" />
+    <None Include="Resources\IconoBorrarNegro.png" />
+    <None Include="Resources\IconoCancelarNegro.png" />
+    <None Include="Resources\IconoGuardarNegro.png" />
+    <None Include="Resources\IconoUsuarioNegro.png" />
+    <None Include="Resources\IconoUsuarioGris.png" />
+    <None Include="Resources\585e4beacb11b227491c3399.png" />
+    <None Include="Resources\IconoRegistroOperaciones.png" />
+    <None Include="Resources\IconoRegistroRespaldos1.png" />
+    <None Include="Resources\IconoRegistroRespaldos.png" />
+    <None Include="Resources\IconoPerfilUsuario.png" />
+    <None Include="Resources\IconoAcceso.png" />
+    <None Include="Resources\IconoRespaldo.png" />
+    <None Include="Resources\IconoStockTransferencias.png" />
+    <None Include="Resources\IconoStockMantenimiento.png" />
+    <None Include="Resources\IconoConsultasStock.png" />
+    <None Include="Resources\IconoConsultasBancos.png" />
+    <None Include="Resources\IconoConsultasCaja.png" />
+    <None Include="Resources\IconoConsultasCanjes.png" />
+    <None Include="Resources\IconoConsultasVentas.png" />
+    <None Include="Resources\IconoConsultasCompras.png" />
+    <None Include="Resources\IconoConsultasArticulos.png" />
+    <None Include="Resources\IconoConsultasProveedores.png" />
+    <None Include="Resources\IconoConsultasClientes.png" />
+    <None Include="Resources\IconoConsultaUsuario1.png" />
+    <None Include="Resources\IconoConsultaUsuario.png" />
+    <None Include="Resources\Gif Proceso 5.gif" />
+    <None Include="Resources\Gif Proceso 3.gif" />
+    <None Include="Resources\Gif Proceso1.jpg" />
+    <None Include="Resources\Gif Proceso 4.gif" />
+    <None Include="Resources\Gif Proceso 1.gif" />
+    <None Include="Resources\Gif Proceso 2.gif" />
+    <None Include="Resources\Gif Proceso.jpg" />
+    <None Include="Resources\LogoSIGEVA.png" />
+    <None Include="Resources\BD.png" />
+    <None Include="Resources\BaseDeDatos.png" />
+    <None Include="Resources\Gif Espera.gif" />
+    <None Include="Resources\IconoModificar.png" />
+    <None Include="Resources\IconoBorrar.png" />
+    <None Include="Resources\IconoImagen.png" />
+    <None Include="Resources\IconoNuevo2.png" />
+    <None Include="Resources\IconoNuevo1.png" />
+    <None Include="Resources\IconoCancelar.png" />
+    <None Include="Resources\IconoGuardar.png" />
+    <None Include="Resources\IconoNuevo.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Procesos\Procesos.vbproj">
+      <Project>{50414628-f68c-435b-8f69-3b9566b08aef}</Project>
+      <Name>Procesos</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
