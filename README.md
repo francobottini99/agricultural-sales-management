@@ -1,5 +1,5 @@
-# SIGEVA - Sistema de Gestión para la Venta de Agroinsumos
-Este proyecto implementa un sistema de gestión para la venta de agroinsumos. Este sistema es una herramienta integral diseñada para facilitar la administración eficiente de la venta de productos agrícolas. Facilita la gestión de los clientes, productos, proveedores, ventas, compras, etc. Cuenta con facturación electrónica **AFIP** y permite la generación de reportes y estadísticas. El cliente esta desarrollado utilizando .NET Framework y el lenguaje de programación VB.NET. El servior esta desarrollado con ASP.NET y VB.NET. La base de datos es MySQL.
+# SIGEVA - Management System for Agricultural Input Sales
+This project implements a management system for the sale of agricultural inputs. This system is a comprehensive tool designed to facilitate the efficient administration of agricultural product sales. It simplifies the management of customers, products, suppliers, sales, purchases, etc. It includes electronic invoicing **AFIP** and allows for the generation of reports and statistics. The client is developed using .NET Framework and the VB.NET programming language. The server is developed with ASP.NET and VB.NET. The database is MySQL.
 
-### Autores:
+### Authors:
 - **Bottini, Franco Nicolas**
